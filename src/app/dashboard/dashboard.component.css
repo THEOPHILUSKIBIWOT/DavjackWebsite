@@ -1,3 +1,50 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"); */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 85.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #29d9d5;
+  border-radius: 5rem;
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+
+
+
 .header{
     width: 100%;
     position: fixed;
@@ -55,17 +102,17 @@ nav ul li a :hover{
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 10px 25px;
+    padding: 10px 10px;
     border-radius: 30px;
 }
 .btn :hover{
     transform: scale(1.5);
 }
-.content{
+.content3{
     position: absolute;
     top: 50%;
     left: 8%;
-    transform: translateY(-50%);
+    /* transform: translateY(-10%); */
 }
 h1{
     color: white;
@@ -89,33 +136,6 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-.newslatter form{
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-
-}
-.newslatter form input:first-child{
-    display: inline-block;
-    width: 70%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
-    outline: none;
-    border-radius: 30px;
-}
-.newslatter form input:last-child{
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 15px 40px;
-    border-radius: 40px;
-    background-color: #f9004d;
-    color: white;
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-    top: 0px;
-    right: 4px;
-}
 
 /* Add some styling for the flipping card */
 .card {
@@ -135,20 +155,20 @@ body {
     h1 {
       margin-bottom: 16px;
     }
-    button {
-      margin-top: 16px;
-    }
+
   }
   
  /* Header */
 .masthead {
-padding-top: 10rem;
+padding-top: 0rem;
 padding-bottom: calc(10rem - 4.5rem);
 background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/assets/p-5.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-attachment: scroll;
 background-size: cover;
+padding-left: 0rem;
+padding-right: 0rem;
 }
 .h-100 {
     height: 100% !important;
@@ -269,7 +289,7 @@ background-size: cover;
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(14, 91, 233, 0.9);
+  background: rgba(12, 90, 230, 0.6);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -867,8 +887,291 @@ background-size: cover;
     border-bottom-left-radius: 0;
   }
 
+  @media (max-width: 575.98px) {
+    .table-responsive-sm {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .table-responsive-md {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .table-responsive-lg {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .table-responsive-xl {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  @media (max-width: 1399.98px) {
+    .table-responsive-xxl {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  @media (max-width: 1399.98px) {
+    .hero {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  @media (max-width: 1399.98px) {
+    .blogs{
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
 
 
+  @media (max-width: 1399.98px) {
+    .tags {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  @media (max-width: 1399.98px) {
+    .span,  , {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
 
 
+  @media (max-width: 600px){
+    
+    .logo{
+      max-width: 100%;
+    }
+    .h2 .h1 a{
+    max-width: 100%;
+    }
+    .content a{
+      max-width: 100%;
+      }
+      .tabs .newslater a{
+        max-width: 100%;
+        }
+        .btn a{
+          max-width: 100%;
+          }
+          .image{
+            max-width: 100%;
+            }
+            .blogs , .box-container , .box , .content2 {
+              max-width: 100%;
+            }
+}
 
+
+.review .box-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: #222;
+  border: 0.2rem solid #111;
+}
+
+.review .box-container .box:hover {
+  border: 0.2rem solid #29d9d5;
+}
+
+.review .box-container .box p {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+  line-height: 2;
+  color: #aaa;
+}
+
+.review .box-container .box .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.review .box-container .box .user img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 30%;
+}
+
+.review .box-container .box .user h3 {
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.review .box-container .box .user span {
+  color: #aaa;
+  font-size: 1.5rem;
+}
+.review h2 {
+  font-size: 2rem;
+  color: #29d9d5;
+  margin-top: 1rem;
+}
+
+.blogs .box-container {
+  
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto];
+      grid-template-columns: repeat(auto, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  width : device-width;
+  initial-scale : 1.0;
+}
+
+.blogs .box-container .box {
+  border-radius: 1rem;
+  background: #222;
+  overflow: hidden;
+  width : device-width;
+}
+
+.blogs .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogs .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .box-container .box .content2 {
+  padding: 2rem;
+}
+
+.blogs .box-container .box .content2 .link {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.blogs .box-container .box .content2 .link:hover {
+  color: #29d9d5;
+}
+
+.blogs .box-container .box .content2 p {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.blogs .box-container .box .content2 .icon {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogs .box-container .box .content2 .icon a {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.blogs .box-container .box .content2 .icon a:hover {
+  color: #29d9d5;
+}
+
+.blogs .box-container .box .content2 .icon a i {
+  padding-right: .5rem;
+  color: #29d9d5;
+}
+.headingblogs {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.headingblogs span {
+  color: #29d9d5;
+  font-size: 2rem;
+}
+
+.headingblogs h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+
+.banner {
+  background: -webkit-gradient(linear, left top, left bottom),  no-repeat;
+  background: linear-gradient,  no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.banner .content span {
+  font-size: 2rem;
+  color: #29d9d5;
+}
+
+.banner .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.banner .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #fff;
+  line-height: 2;
+}
+
+.alert .alert-warning{
+  color: red;
+}
+.alert .alert-warning2{
+  color: red;
+}
+.alert .alert-danger{
+  color: red;
+}
+.alert .alert-danger2{
+  color: red;
+}

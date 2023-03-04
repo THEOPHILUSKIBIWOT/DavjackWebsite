@@ -5,7 +5,9 @@
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
   }
-  
+  .logo{
+    padding-right: 0%;
+  }
   /* Style the navbar links */
   #navbar a {
     float: left;
@@ -28,7 +30,7 @@
     #navbar a{
     max-width: 100%;
     }
-    .mat-toolbar .span{
+    .mat-toolbar .span .mat-icon{
     max-width: 100%;
     }
 }
@@ -55,7 +57,7 @@
     .navbar{
       max-width: 100%;
     }
-    .spec{
+    .spec .logo{
         width: 100%;
     }
 }
@@ -74,4 +76,10 @@ mat-card-header{
     font: 1em Roboto, Helvetica, sans-serif;
     
 
+}
+@media (max-width: 1399.98px) {
+  ..newslatter {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
