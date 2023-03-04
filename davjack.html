@@ -1,0 +1,304 @@
+<html>
+
+  <body>
+    <div class="hero">
+      <nav>
+       <h2 class="logo">DAVJACK <span>CONSULTANCY</span></h2>
+       <ul class="tabs">
+         <li><a href="#portfolio">Our Services</a></li>
+         <li><a href="#portfolio">Explore</a></li>
+         <li><a href="#contact">Contact us</a></li>
+         <li><a href="#portfolio">About us</a></li>
+       </ul>
+      </nav>
+      <section class="banner" id="about">
+        <div class="content" data-aos="fade-left" data-aos-delay="800" >
+            <!-- <span>Who are we?</span> -->
+            <p>We are registered Recruiting Travel and Consultant Agency in Kenya offering support 
+                to all qualified persons with intrest to work, live and study abroad.</p>
+            <a href="#blogs" class="btn">read more</a>
+        </div>
+    
+    </section>
+     </div>  
+     <main class="">
+
+    <div id="portfolio">
+      <div class="container-fluid p-0">
+          <div class="row g-0">
+              <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="assets/Davjack Consultant.png" title="Project Name">
+                      <img class="img-fluid" src="assets/Qatar.png" alt=".." />
+                      <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">UNSKILLED</div>
+                          <div class="project-name">Qatar</div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="assets/p-2.jpg" title="Project Name">
+                      <img class="img-fluid" src="assets/timetotravel.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">TRAVEL WITH US</div>
+                          <div class="project-name">IT IS TIME</div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="VisitDubai.png" title="Project Name">
+                      <img class="img-fluid" src="assets/VisitDubai.png" alt="..." />
+                      <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">SKILLED AND UNSKILLED</div>
+                          <div class="project-name">Dubai</div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="assets/p-5.jpg" title="Project Name">
+                      <img class="img-fluid" src="assets/p-5.jpg" alt="..." />
+                      <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">STUDENTS</div>
+                          <div class="project-name">Australia</div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="assets/p-6.jpg" title="Project Name">
+                      <img class="img-fluid" src="assets/p-6.jpg" alt="..." />
+                      <div class="portfolio-box-caption">
+                          <div class="project-category text-white-50">UNSKILLED</div>
+                          <div class="project-name">UNITED ARAB EMIRATES</div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="assets/g-1.jpg" title="Project Name">
+                      <img class="img-fluid" src="assets/g-1.jpg" alt="..." />
+                      <div class="portfolio-box-caption p-3">
+                          <div class="project-category text-white-50">CareGivers</div>
+                          <div class="project-name">UK</div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <header class="masthead" id="davjack">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">We Have Many Opportuniuties For you. We are Making Your Dreams Come Through</h1>
+                <hr class="divider" />
+             </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5">Start Your Applications Today and That Country You Have Been Dreaming of Will be your New Place Of Work!</p>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+  
+
+
+  <section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0">Let's Get In Touch!</h2>
+                <hr class="divider" />
+                <p class="text-muted mb-5">Ready to start your application with us? Send us a messages and we will get back to you as soon as possible!</p>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+
+                <form id="contactForm" (ngSubmit)="submit()" onsubmit="submit()" #submitform ="ngForm" action="https://send.pageclip.co/YAaKm255VnJnIEQpAWPKYLom6X1eZHnr/InterestedClients" class="pageclip-form" method="post">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        
+                        <input  class="form-control" id="name" name="name" type="text" placeholder="Enter your name..."  [(ngModel)]="user.name" required #name="ngModel"
+                        [class.is-invalid]="name.invalid && name.touched"/>
+                        <label for="name">Full name</label>
+                    </div>
+
+                    <!-- alert-->
+                    <div class="alert .alert-warning" *ngIf="name.errors && (name.invalid && name.touched)">
+                        <div  role="alert" *ngIf="name.invalid">Your name is required</div>
+                        <small class="alert alert-warning"*ngIf="name.touched"> Enter Valid name</small>
+                      </div>
+
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" name ="email" placeholder="name@example.com"  [(ngModel)]="user.email" required #email="ngModel" required pattern="[^]+@[^]+[.][a-z]{2,63}$" autocomplete="email" ngModel [email]="true"
+                        [class.is-invalid]="email.invalid && email.touched"/>
+                        <label for="email">Email address</label>
+                    </div>
+
+                    <!-- alert-->
+                    <div class="alert .alert-danger" *ngIf="email.errors && (email.invalid && email.touched)">
+                        <div  role="alert" *ngIf="email.invalid">Your email address is required</div>
+                        <small class="alert alert-danger"*ngIf="email.touched"> Enter Valid email</small>
+                    </div>
+
+
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" name="phone" placeholder="(123) 456-7890"  [(ngModel)]="user.phone" required #phone="ngModel"
+                        [class.is-invalid]="phone.invalid && phone.touched" />
+                        <label for="phone">Phone number</label>
+                    </div>
+
+                     <!-- alert-->
+                     <div class="alert .alert-danger" *ngIf="phone.errors && (phone.invalid && phone.touched)">
+                        <div  role="alert" *ngIf="phone.invalid">Your ephone number is required</div>
+                        <small class="alert alert-danger"*ngIf="phone.touched"> Enter Valid phone number</small>
+                    </div>
+
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" name="message" placeholder="Enter your message here..." style="height: 10rem"  ngModel></textarea>
+                        <label for="message">Enter your message here...</label>
+                    </div>
+                    <div class="d-grid"><button [disabled]="submitform.invalid" class="btn btn-primary btn-xl disabled" id="submitButton" type="submit"><span>Submit</span></button></div>
+                
+                </form>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                <div>Call  <b>+254 (712) 475-422</b></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="review">
+
+    <div class="content1" data-aos="fade-right" data-aos-delay="300">
+        <h2>What are our clients saying</h2>
+        <p>We have deployed more than 1000 clients to countries like Qatar United Arab Emirates Poland UK and many other countries. Below are some of their reviews and geniune comments. Dont be left out, be part of them</p>
+    </div>
+
+    <div class="box-container" data-aos="fade-left" data-aos-delay="600">
+
+        <div class="box">
+            <p>I always dreamt of being a software Engineer outside the country. My dreams came through when i met Davjack. I am currently working as a software Engineer at SUSE in UK.</p>
+            <div class="user">
+                <img src="assets/Gibson.png" alt="">
+                <div class="info">
+                    <h3>Gibson Moronge Oyori</h3>
+                    <span>Developer - Kuwait</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>I cannot sing the Praises of Davjack enough. They are expirienced in this field and without them I could not have secured Security job in Qatar</p>
+            <div class="user">
+                <img src="assets/Geoffrey.png" alt="">
+                <div class="info">
+                    <h3>Geoffrey Onduka Mose</h3>
+                    <span>Security - Qatar</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>Davjack, Thank you for existing! You have made my job search an absolute pleasure and more simpler than o thought. Now i can refer all my friends. THANK YOU DAVJACK</p>
+            <div class="user">
+                <img src="assets/Joseph.jpg" alt="">
+                <div class="info">
+                    <h3>Josph Kitheka</h3>
+                    <span>Cleaner - Qatar</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>I can't recommend Davjack to anyone enough. Customer expirience is super good and job application is transparent. After service is perfect. Still in contact with me in Saudi till today. Thank you for having Davjack</p>
+            <div class="user">
+                <img src="" alt="">
+                <div class="info">
+                    <h3>Banice Wambui</h3>
+                    <span>House maid - Saudi</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="blogs" id="blogs">
+
+        <div class="headingblogs">
+            <span>About Us</span>
+            <h2> And Our stories</h2>
+        </div>
+    
+        <div class="box-container">
+    
+            <div class="box" data-aos="fade-up" data-aos-delay="150">
+                <div class="image">
+                    <img src="assets/CR12.png"  style="max-width: 100%; height: auto;">
+                </div>
+                <div class="content2" >
+                    
+                    <a href="#" class="link">We are registered, We are transparent</a>
+                    <p>Sometimes we get lured by conmen uknowingly promising you the best jobs outside Kenya. 
+                        We will not allow that to happen to you. We are here for you!</p>
+                    <div class="icon" style="max-width: 100%; height: auto;">
+                        <a href="#"><i class="fas fa-clock"></i> 1st Mar, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> By David Mongou - CEO</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+                <div class="image">
+                    <img src="assets/Davjack1.png" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="content2">
+                    <a href="#" class="link">Book it with us, and Book It Out of Here!</a>
+                    <p>Want to stand out from the rest? Work with us. We take you to all the places only the daring can embark on, Work there and change your live. 
+                        Special Packages and discount rates! We are just a call away! Register with us today for more</p>
+                    <div class="icon" style="max-width: 100%; height: auto;">
+                        <a href="#"><i class="fas fa-clock"></i> 21st Feb, 2023</a>
+                        <a href="#"><i class="fas fa-user"></i> By David Mongou - CEO</a>
+                    </div>
+                </div>
+            </div>  
+    
+        </div>
+    
+    </section>
+
+    <div class="banner">
+
+        <div class=".banner .content" data-aos="zoom-in-up" data-aos-delay="300">
+            <span>start your applications</span>
+            <h3>Let's Explore and dream together</h3>
+            <p>No matter where in the world you want to go, we can help get you there. Escape the ordinary and discover the extraordinary.</p>
+            <a href="#contact" class="btn">book now</a>
+        </div>
+    
+    </div>
+ 
+
+
+</section>
+
+      <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Davjack Consultant</div> Powered by Thepakishan Technologies</div>
+    </footer>
+  </main>
+
+  
+  
+ </body>
+</html>
+
+
+
+
+
+
+
